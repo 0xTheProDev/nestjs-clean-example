@@ -1,10 +1,10 @@
 {
   "name": "nest-typescript-starter",
-  "private": true,
-  "version": "1.0.0",
-  "description": "Nest TypeScript starter repository",
+  "version": "0.0.0",
+  "description": "Example Application Interface using NestJS framework in TypeScript",
   "license": "MIT",
   "scripts": {
+    "postinstall": "husky install",
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
@@ -21,11 +21,14 @@
   },
   "dependencies": {
     "@nestjs/common": "8.4.7",
+    "@nestjs/config": "2.1.0",
     "@nestjs/core": "8.4.7",
     "@nestjs/platform-fastify": "8.4.7",
+    "@nestjs/typeorm": "8.1.4",
+    "mysql2": "2.3.3",
     "reflect-metadata": "0.1.13",
-    "rimraf": "3.0.2",
-    "rxjs": "7.5.5"
+    "rxjs": "7.5.5",
+    "typeorm": "0.3.6"
   },
   "devDependencies": {
     "@nestjs/cli": "8.2.8",
@@ -39,9 +42,16 @@
     "@typescript-eslint/parser": "5.29.0",
     "eslint": "8.18.0",
     "eslint-config-prettier": "8.5.0",
+    "eslint-import-resolver-typescript": "3.1.1",
+    "eslint-plugin-import": "2.26.0",
     "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-unused-imports": "2.0.0",
+    "husky": "8.0.1",
     "jest": "28.1.1",
+    "lint-staged": "13.0.3",
     "prettier": "2.7.1",
+    "rimraf": "3.0.2",
+    "sort-package-json": "1.57.0",
     "source-map-support": "0.5.21",
     "supertest": "6.2.3",
     "ts-jest": "28.0.5",
