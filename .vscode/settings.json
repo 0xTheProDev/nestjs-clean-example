@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 4,
+  "files.associations": {
+    ".env": "properties"
+  }
+}
