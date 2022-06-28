@@ -3,8 +3,8 @@ declare global {
     interface ProcessEnv {
       /** NodeJS Environment */
       NODE_ENV: "development" | "production" | "test";
-      /** RDBMS Server Hostname */
-      DATABASE_HOSTNAME: string;
+      /** RDBMS Server Host */
+      DATABASE_HOST: string;
       /** RDBMS Database Instance Name */
       DATABASE_NAME: string;
       /** RDBMS Server Passkey */

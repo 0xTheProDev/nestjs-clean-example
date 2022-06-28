@@ -10,6 +10,10 @@ export class AuthorService {
     private authorRepository: Repository<Author>,
   ) {}
 
+  addOrUpdate(author: Author): Promise<Author> {
+    return this.authorRepository.save(author);
+  }
+
   findAll(): Promise<Author[]> {
     return this.authorRepository.find();
   }
