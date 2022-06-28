@@ -10,8 +10,8 @@ export class AuthorService {
     private authorRepository: Repository<Author>,
   ) {}
 
-  addOrUpdate(author: Author): Promise<Author> {
-    return this.authorRepository.save(author);
+  async delete(id: number): Promise<void> {
+    await this.authorRepository.delete(id);
   }
 
   findAll(): Promise<Author[]> {
@@ -22,7 +22,12 @@ export class AuthorService {
     return this.authorRepository.findOneBy({ id });
   }
 
-  async remove(id: number): Promise<void> {
-    await this.authorRepository.delete(id);
+  save(author: Author): Promise<Author> {
+    return this.authorRepository.save(author);
+  }
+
+  async update(id: number, author: Author): Promise<Author> {
+    await this.authorRepository.update(id, author);
+    return author;
   }
 }

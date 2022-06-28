@@ -1,4 +1,5 @@
-import { Entity, Column, PrimaryGeneratedColumn } from "typeorm";
+import { Entity, Column, PrimaryGeneratedColumn, ManyToMany } from "typeorm";
+import { Book } from "./book.entity";
 
 @Entity("authors")
 export class Author {
@@ -10,4 +11,7 @@ export class Author {
 
   @Column()
   lastName: string;
+
+  @ManyToMany(() => Book, (book) => book.authors, { cascade: true })
+  books: Promise<Book[]>;
 }

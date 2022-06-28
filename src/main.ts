@@ -13,6 +13,8 @@ async function bootstrap() {
     AppModule,
     new FastifyAdapter(),
   );
+  app.setGlobalPrefix("/api");
+  app.enableVersioning();
   app.useGlobalPipes(new ValidationPipe());
   setupSwaggerDocument(app);
   await app.listen(3000);
