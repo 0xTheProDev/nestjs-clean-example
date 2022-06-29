@@ -28,6 +28,7 @@ export class AuthorService {
 
   async update(id: number, author: Author): Promise<Author> {
     await this.authorRepository.update(id, author);
+    author.id = id;
     return author;
   }
 }

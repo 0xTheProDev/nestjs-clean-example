@@ -5,7 +5,7 @@ import { Book } from "@entities/book.entity";
 import { AuthorService } from "@services/author.service";
 import { BookService } from "@services/book.service";
 import { plainToInstance } from "class-transformer";
-import { Repository } from "typeorm";
+import { createMock } from "@golevelup/ts-jest";
 
 import { AuthorController } from "./author.controller";
 
@@ -15,13 +15,9 @@ describe("AuthorController", () => {
   let bookService: BookService;
 
   beforeEach(() => {
-    authorService = new AuthorService(null as Repository<Author>);
-    bookService = new BookService(null as Repository<Book>);
+    authorService = createMock();
+    bookService = createMock();
     authorController = new AuthorController(authorService, bookService);
-  });
-
-  afterEach(() => {
-    jest.clearAllMocks();
   });
 
   describe("getAuthors", () => {
@@ -31,6 +27,11 @@ describe("AuthorController", () => {
           id: 1,
           firstName: "Makashi",
           lastName: "Kishimoto",
+        }),
+        plainToInstance(Author, {
+          id: 2,
+          firstName: "Hajime",
+          lastName: "Isamaya",
         }),
       ];
       jest.spyOn(authorService, "findAll").mockResolvedValueOnce(authors);

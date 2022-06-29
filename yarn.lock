@@ -480,6 +480,11 @@
   resolved "https://registry.yarnpkg.com/@fastify/error/-/error-2.0.0.tgz#a9f94af56eb934f0ab1ce4ef9f0ced6ebf2319dc"
   integrity sha512-wI3fpfDT0t7p8E6dA2eTECzzOd+bZsZCJ2Hcv+Onn2b7ZwK3RwD27uW2QDaMtQhAfWQQP+WNK7nKf0twLsBf9w==
 
+"@golevelup/ts-jest@0.3.3":
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@golevelup/ts-jest/-/ts-jest-0.3.3.tgz#f9901f3eaaa7fd366d97538d2fc859ffc3052693"
+  integrity sha512-gut5EhD2S7W1p+C/IsUS1o0P5SHgxsN9TqHyRTjG+rfycniLNBfvIWZPEizpsTev/lR10/XOTpE0YicxPme2+Q==
+
 "@graphql-tools/merge@8.2.13":
   version "8.2.13"
   resolved "https://registry.yarnpkg.com/@graphql-tools/merge/-/merge-8.2.13.tgz#d4f254dcea301ce3d9c23b03eb68a7ae9baf6981"

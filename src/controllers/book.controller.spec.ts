@@ -4,7 +4,7 @@ import { Author } from "@entities/author.entity";
 import { Book } from "@entities/book.entity";
 import { BookService } from "@services/book.service";
 import { plainToInstance } from "class-transformer";
-import { Repository } from "typeorm";
+import { createMock } from "@golevelup/ts-jest";
 
 import { BookController } from "./book.controller";
 
@@ -13,7 +13,7 @@ describe("BookController", () => {
   let bookService: BookService;
 
   beforeEach(() => {
-    bookService = new BookService(null as Repository<Book>);
+    bookService = createMock();
     bookController = new BookController(bookService);
   });
 
