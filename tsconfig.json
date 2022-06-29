@@ -19,6 +19,8 @@
       "@entities/*": ["src/entities/*"],
       "@modules/*": ["./src/modules/*"],
       "@repositories/*": ["./src/repositories/*"],
+      "@resolvers/*": ["./src/graphql/resolvers/*"],
+      "@schemas/*": ["./src/graphql/schemas/*"],
       "@services/*": ["./src/services/*"]
     }
   }
