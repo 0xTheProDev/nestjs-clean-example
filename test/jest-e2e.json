@@ -1,4 +1,6 @@
 {
+  "collectCoverage": true,
+  "collectCoverageFrom": ["src/**/*.(t|j)s"],
   "moduleFileExtensions": ["js", "json", "ts"],
   "rootDir": ".",
   "testEnvironment": "node",
