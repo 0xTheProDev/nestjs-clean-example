@@ -85,7 +85,7 @@ export class BookController {
     author.id = addAuthorDto.id;
     const book = await this.bookService.findOne(id);
     book.authors = [...book.authors, author];
-    return this.bookService.update(id, book);
+    return this.bookService.save(book);
   }
 
   @Put()

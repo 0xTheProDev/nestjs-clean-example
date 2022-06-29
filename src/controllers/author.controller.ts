@@ -104,11 +104,11 @@ export class AuthorController {
     type: BookDto,
   })
   addBook(
-    @Param("id") id: number,
+    @Param("id") authorId: number,
     @Body() createBookDto: CreateBookDto,
   ): Promise<Book> {
     const author = new Author();
-    author.id = id;
+    author.id = authorId;
     const book = new Book();
     book.name = createBookDto.name;
     book.authors = [author];
