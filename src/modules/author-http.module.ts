@@ -4,11 +4,11 @@ import { AuthorService } from "@services/author.service";
 import { AuthorController } from "@controllers/author.controller";
 import { BookService } from "@services/book.service";
 import { BookModule } from "./book.module";
-import { AuthorsResolver } from "@resolvers/author.resolver";
+import { AuthorResolver } from "@resolvers/author.resolver";
 
 @Module({
   imports: [AuthorModule, BookModule],
-  providers: [AuthorService, BookService, AuthorsResolver],
+  providers: [AuthorService, BookService, AuthorResolver],
   controllers: [AuthorController],
 })
 export class AuthorHttpModule {}

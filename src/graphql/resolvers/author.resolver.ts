@@ -21,7 +21,7 @@ import { AuthorService } from "@services/author.service";
 import { BookService } from "@services/book.service";
 
 @Resolver(() => Author)
-export class AuthorsResolver {
+export class AuthorResolver {
   constructor(
     private authorService: AuthorService,
     private readonly bookService: BookService,

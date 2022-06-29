@@ -4,8 +4,8 @@ import { Module } from "@nestjs/common";
 import { ConfigModule } from "@nestjs/config";
 import { GraphQLModule } from "@nestjs/graphql";
 import { TypeOrmModule } from "@nestjs/typeorm";
-import { AuthorHttpModule } from "./author-http.module";
-import { BookHttpModule } from "./book-http.module";
+import { AuthorHttpModule } from "@modules/author-http.module";
+import { BookHttpModule } from "@modules/book-http.module";
 
 @Module({
   imports: [
