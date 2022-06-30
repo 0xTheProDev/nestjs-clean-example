@@ -186,7 +186,7 @@ describe("AuthorController", () => {
     });
   });
 
-  describe("removeAuthor", () => {
+  describe("removeBook", () => {
     it("should delete a book from an author with given id", async () => {
       const book = plainToInstance(Book, {
         id: 1,
@@ -199,15 +199,12 @@ describe("AuthorController", () => {
         books: [book],
       });
       jest.spyOn(authorService, "findOne").mockResolvedValueOnce(author);
-      const saveSpy = jest
+      jest
         .spyOn(authorService, "save")
         .mockImplementationOnce(async (dto) => dto);
 
       await authorController.removeBook(author.id, book.id);
-      expect(saveSpy).toHaveBeenCalledWith({
-        ...author,
-        books: Promise.resolve(),
-      });
+      expect(await author.books).toEqual([]);
     });
   });
 });
