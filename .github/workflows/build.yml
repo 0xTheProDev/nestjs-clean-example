@@ -1,5 +1,5 @@
 ---
-name: Tests
+name: Build
 on:
   push:
     branches:
@@ -9,11 +9,10 @@ on:
       - main
 
 jobs:
-  unit-test:
+  build:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
-        shard: [1/3, 2/3, 3/3]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
@@ -37,5 +36,5 @@ jobs:
       - name: Install Dependencies
         run: yarn install --frozen-lockfile --ignore-scripts
 
-      - name: Run Unit Tests
-        run: yarn test:ci --shard=${{ matrix.shard }}
+      - name: Build Artifacts
+        run: yarn build

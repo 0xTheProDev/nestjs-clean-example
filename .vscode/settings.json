@@ -4,5 +4,8 @@
   "files.associations": {
     ".env": "properties",
     ".yarnclean": "ignore"
+  },
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "file:///Users/progyan/OpenSource/nestjs-clean-example/.github/workflows/build.yml"
   }
 }
