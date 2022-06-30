@@ -13,6 +13,7 @@ export class TypeOrmConfig implements TypeOrmOptionsFactory {
       username: process.env.DATABASE_USERNAME,
       synchronize: false,
       entities: ["dist/entities/*.entity.js"],
+      migrations: ["dist/migrations/*.migration.ts"],
     };
   }
 }

@@ -16,7 +16,7 @@
     "test": "cross-env TEST_ENV=true jest --colors --detectOpenHandles",
     "test:ci": "cross-env CI=true yarn test --ci --silent --forceExit --watchAll=false",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json --colors --detectOpenHandles",
+    "test:e2e": "jest --config jest.e2e.config.ts --colors --detectOpenHandles",
     "test:e2e:ci": "cross-env CI=true yarn test:e2e --ci --silent --forceExit --watchAll=false",
     "test:watch": "jest --watch"
   },
