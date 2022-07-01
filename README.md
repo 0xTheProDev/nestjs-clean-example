@@ -37,13 +37,13 @@ This example showcases Repository Pattern in Hexagonal Architecture _(also known
 
 ## Testing
 
-- Run the following command to initiate test:
+- Run the following command to initiate Unit test:
   ```sh
   $ yarn test
   ```
-- To include Coverage Reporting as well:
+- Run the following command to initiate E2E test:
   ```sh
-  $ yarn test:cov
+  $ yarn test:e2e
   ```
 
 ## License

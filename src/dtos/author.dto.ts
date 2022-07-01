@@ -1,54 +1,72 @@
-import { ApiProperty } from "@nestjs/swagger";
 import { IsString, IsNotEmpty, IsInt } from "class-validator";
 
 export class AddAuthorDto {
-  @ApiProperty({ example: 1, description: "Unique Id of the Author" })
+  /**
+   * Unique Id of the Author
+   * @example 1
+   */
   @IsInt()
   @IsNotEmpty()
-  readonly id?: number;
+  readonly id: number;
 }
 
 export class AuthorDto {
-  @ApiProperty({ example: 1, description: "Unique Id of the Author" })
+  /**
+   * Unique Id of the Author
+   * @example 1
+   */
   readonly id: number;
 
-  @ApiProperty({ example: "JK", description: "First name of the Author" })
+  /**
+   * First name of the Author
+   * @example JK
+   */
   readonly firstName: string;
 
-  @ApiProperty({ example: "Rowling", description: "Last name of the Author" })
+  /**
+   * Last name of the Author
+   * @example Rowling
+   */
   readonly lastName: string;
 }
 
 export class CreateAuthorDto {
-  @ApiProperty({ example: "JK", description: "First name of the Author" })
+  /**
+   * First name of the Author
+   * @example JK
+   */
   @IsNotEmpty()
   @IsString()
   readonly firstName: string;
 
-  @ApiProperty({ example: "Rowling", description: "Last name of the Author" })
+  /**
+   * Last name of the Author
+   * @example Rowling
+   */
   @IsNotEmpty()
   @IsString()
   readonly lastName: string;
 }
 
 export class UpdateAuthorDto {
-  @ApiProperty({ example: 1, description: "Unique Id of the Author" })
+  /**
+   * Unique Id of the Author
+   * @example 1
+   */
   @IsInt()
   readonly id?: number;
 
-  @ApiProperty({
-    example: "JK",
-    description: "First name of the Author",
-    required: false,
-  })
+  /**
+   * First name of the Author
+   * @example JK
+   */
   @IsString()
   readonly firstName?: string;
 
-  @ApiProperty({
-    example: "Rowling",
-    description: "Last name of the Author",
-    required: false,
-  })
+  /**
+   * Last name of the Author
+   * @example Rowling
+   */
   @IsString()
   readonly lastName?: string;
 }
