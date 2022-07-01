@@ -24,14 +24,10 @@ coverage
 # build scripts
 
 Makefile
-Gulpfile.js
-Gulpfile.ts
-gulpfile.js
-gulpfile.ts
-Gruntfile.js
-Gruntfile.ts
-gruntfile.js
-gruntfile.ts
+Gulpfile.*
+gulpfile.*
+Gruntfile.*
+gruntfile.*
 
 # configs
 
@@ -40,7 +36,8 @@ babel.config.js
 circle.yml
 codeship-services.yml
 codeship-steps.yml
-webpack.config.js
+jest.config.*
+webpack.config.*
 wercker.yml
 *.bazel
 .taprc
@@ -67,3 +64,4 @@ wercker.yml
 CHANGELOG
 LICENSE
 *.md
+*.map

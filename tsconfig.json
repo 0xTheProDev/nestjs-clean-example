@@ -22,7 +22,8 @@
       "@repositories/*": ["./src/repositories/*"],
       "@resolvers/*": ["./src/graphql/resolvers/*"],
       "@schemas/*": ["./src/graphql/schemas/*"],
-      "@services/*": ["./src/services/*"]
+      "@services/*": ["./src/services/*"],
+      "@test-helpers/*": ["./test/helpers/*"]
     }
   }
 }
