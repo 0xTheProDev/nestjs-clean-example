@@ -3,19 +3,21 @@ import {
   FastifyAdapter,
   NestFastifyApplication,
 } from "@nestjs/platform-fastify";
+import { useRefreshDatabase } from "@test-helpers/seeding";
 import { Connection } from "typeorm";
 import { createTestingModule } from "./setups/test-module";
 import { seedDatabase } from "./setups/test-seeder";
 
 describe("AuthorController (e2e)", () => {
   let app: NestFastifyApplication;
+  let connection: Connection;
 
   beforeAll(async () => {
     const moduleRef = await createTestingModule({
       imports: [AuthorHttpModule],
     }).compile();
 
-    const connection = await moduleRef.resolve(Connection);
+    connection = await moduleRef.resolve(Connection);
     await seedDatabase(connection);
 
     app = moduleRef.createNestApplication<NestFastifyApplication>(
@@ -27,6 +29,7 @@ describe("AuthorController (e2e)", () => {
   });
 
   afterAll(async () => {
+    await useRefreshDatabase(connection);
     await app.close();
   });
 

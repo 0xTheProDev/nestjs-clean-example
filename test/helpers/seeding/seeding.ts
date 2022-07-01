@@ -57,12 +57,11 @@ export const runSeeder = async (
 
 export const useRefreshDatabase = async (
   connection: Connection,
-): Promise<Connection> => {
+): Promise<void> => {
   if (connection && connection.isConnected) {
     await connection.dropDatabase();
     await connection.synchronize();
   }
-  return connection;
 };
 
 export const tearDownDatabase = async (
