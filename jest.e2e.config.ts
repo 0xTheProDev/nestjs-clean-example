@@ -8,6 +8,12 @@ import tsconfig = require("./tsconfig.json");
 const configuration: Config.InitialOptions = {
   collectCoverage: true,
   collectCoverageFrom: ["src/**/*.ts"],
+  coveragePathIgnorePatterns: [
+    "src/config",
+    "src/app.module",
+    "src/main",
+    ".spec.ts$",
+  ],
   coverageDirectory: "coverage-e2e",
   moduleFileExtensions: ["js", "json", "ts"],
   moduleNameMapper: pathsToModuleNameMapper(tsconfig.compilerOptions.paths, {

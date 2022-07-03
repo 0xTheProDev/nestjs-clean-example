@@ -1,3 +1,4 @@
+import once from "lodash.once";
 import { Connection } from "typeorm";
 import {
   importFiles,
@@ -5,6 +6,7 @@ import {
   loadFiles,
   runSeeder,
   SeederConstructor,
+  useRefreshDatabase,
 } from "@test-helpers/seeding";
 
 /** Log Error in Console and Throw an Error for Test Runner to catch. */
@@ -48,4 +50,7 @@ export async function seedDatabase(connection: Connection) {
   }
 }
 
-export { useRefreshDatabase as createDatabase } from "@test-helpers/seeding";
+export const seedDatabaseOnce = once(seedDatabase);
+export const createDatabaseOnce = once(useRefreshDatabase);
+
+export { useRefreshDatabase as createDatabase };
