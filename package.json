@@ -1,8 +1,20 @@
 {
-  "name": "nest-typescript-starter",
-  "version": "0.0.0",
+  "name": "nestjs-clean-example",
+  "version": "0.1.0",
+  "private": true,
   "description": "Example Application Interface using NestJS framework in TypeScript",
+  "bugs": {
+    "url": "https://github.com/Progyan1997/nestjs-clean-example/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Progyan1997/nestjs-clean-example"
+  },
   "license": "MIT",
+  "author": {
+    "name": "Progyan Bhattacharya",
+    "email": "bprogyan@gmail.com"
+  },
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",

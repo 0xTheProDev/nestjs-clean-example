@@ -1,4 +1,5 @@
 {
+  "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "files.associations": {
@@ -6,6 +7,9 @@
     ".yarnclean": "ignore"
   },
   "yaml.schemas": {
-    "https://json.schemastore.org/github-workflow.json": "file:///Users/progyan/OpenSource/nestjs-clean-example/.github/workflows/build.yml"
+    "https://json.schemastore.org/github-workflow.json": [
+      "./.github/workflows/build.yml",
+      "./.github/workflows/tests.yml"
+    ]
   }
 }
