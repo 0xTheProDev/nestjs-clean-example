@@ -5,11 +5,8 @@ import {
   NestFastifyApplication,
 } from "@nestjs/platform-fastify";
 import { Connection } from "typeorm";
-import { extendExpect } from "./setups/test-e2e";
 import { createTestingModule } from "./setups/test-module";
 import { createDatabaseOnce, seedDatabaseOnce } from "./setups/test-seeder";
-
-extendExpect();
 
 describe("BookController (e2e)", () => {
   let app: NestFastifyApplication;

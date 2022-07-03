@@ -67,7 +67,7 @@ export class AuthorResolver {
     return true;
   }
 
-  @Mutation(() => Author, { description: "Add Book to Author" })
+  @Mutation(() => Book, { description: "Add Book to Author" })
   async addBook(@Args("book") addBookDto: AddBookDto) {
     const author = new AuthorModel();
     author.id = addBookDto.authorId;
