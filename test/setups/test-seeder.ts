@@ -47,3 +47,5 @@ export async function seedDatabase(connection: Connection) {
     }
   }
 }
+
+export { useRefreshDatabase as createDatabase } from "@test-helpers/seeding";

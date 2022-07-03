@@ -4,10 +4,10 @@ import { ConfigModule } from "@nestjs/config";
 import { GraphQLModule } from "@nestjs/graphql";
 import { Test, TestingModuleBuilder } from "@nestjs/testing";
 import { TypeOrmModule } from "@nestjs/typeorm";
-import { getTestDatabaseConfiguration } from "./test-database";
+import { getTestDatabaseConfiguration } from "@test-helpers/database";
 
 /**
- * @param param0 - Module Metadata.
+ * @param metadata - Module Metadata.
  * @returns Testing Module builder to create Modules in Test.
  */
 export function createTestingModule({
