@@ -8,12 +8,12 @@
 [![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)](https://graphql.org/)
 [![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)](https://eslint.org)
 [![Prettier](https://img.shields.io/badge/Prettier-black?style=for-the-badge&logo=prettier&logoColor=white)](https://prettier.io)
-[![Open Issues](https://img.shields.io/github/issues-raw/Progyan1997/nestjs-clean-example?style=for-the-badge)](https://github.com/Progyan1997/nestjs-clean-example/issues)
-[![Closed Issues](https://img.shields.io/github/issues-closed-raw/Progyan1997/nestjs-clean-example?style=for-the-badge)](https://github.com/Progyan1997/nestjs-clean-example/issues?q=is%3Aissue+is%3Aclosed)
-[![Open Pulls](https://img.shields.io/github/issues-pr-raw/Progyan1997/nestjs-clean-example?style=for-the-badge)](https://github.com/Progyan1997/nestjs-clean-example/pulls)
-[![Closed Pulls](https://img.shields.io/github/issues-pr-closed-raw/Progyan1997/nestjs-clean-example?style=for-the-badge)](https://github.com/Progyan1997/nestjs-clean-example/pulls?q=is%3Apr+is%3Aclosed)
-[![Contributors](https://img.shields.io/github/contributors/Progyan1997/nestjs-clean-example?style=for-the-badge)](https://github.com/Progyan1997/nestjs-clean-example/graphs/contributors)
-[![Activity](https://img.shields.io/github/last-commit/Progyan1997/nestjs-clean-example?style=for-the-badge&label=most%20recent%20activity)](https://github.com/Progyan1997/nestjs-clean-example/pulse)
+[![Open Issues](https://img.shields.io/github/issues-raw/0xTheProDev/nestjs-clean-example?style=for-the-badge)](https://github.com/0xTheProDev/nestjs-clean-example/issues)
+[![Closed Issues](https://img.shields.io/github/issues-closed-raw/0xTheProDev/nestjs-clean-example?style=for-the-badge)](https://github.com/0xTheProDev/nestjs-clean-example/issues?q=is%3Aissue+is%3Aclosed)
+[![Open Pulls](https://img.shields.io/github/issues-pr-raw/0xTheProDev/nestjs-clean-example?style=for-the-badge)](https://github.com/0xTheProDev/nestjs-clean-example/pulls)
+[![Closed Pulls](https://img.shields.io/github/issues-pr-closed-raw/0xTheProDev/nestjs-clean-example?style=for-the-badge)](https://github.com/0xTheProDev/nestjs-clean-example/pulls?q=is%3Apr+is%3Aclosed)
+[![Contributors](https://img.shields.io/github/contributors/0xTheProDev/nestjs-clean-example?style=for-the-badge)](https://github.com/0xTheProDev/nestjs-clean-example/graphs/contributors)
+[![Activity](https://img.shields.io/github/last-commit/0xTheProDev/nestjs-clean-example?style=for-the-badge&label=most%20recent%20activity)](https://github.com/0xTheProDev/nestjs-clean-example/pulse)
 
 ## Description
 

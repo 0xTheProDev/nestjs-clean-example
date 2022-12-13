@@ -4,11 +4,11 @@
   "private": true,
   "description": "Example Application Interface using NestJS framework in TypeScript",
   "bugs": {
-    "url": "https://github.com/Progyan1997/nestjs-clean-example/issues"
+    "url": "https://github.com/0xTheProDev/nestjs-clean-example/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Progyan1997/nestjs-clean-example"
+    "url": "git+https://github.com/0xTheProDev/nestjs-clean-example"
   },
   "license": "MIT",
   "author": {
